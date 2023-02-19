@@ -6,7 +6,7 @@ This is a repository of Markov Conditional Generative Adversarial Network (MCGAN
 The code for this paper is based on the Basicsr library. 
 
 # Network architecture:
-![network.png](https://github.com/TJU-WEIHAO/MLCN/blob/main/network.png)
+![network.png](https://github.com/TJU-EECS/MC-GAN/blob/main/assert/network.jpg)
 
 
 # Installation
@@ -38,8 +38,11 @@ The more details can be find in ./docs.
 - **Logging**: Please refer to [Logging.md](docs/Logging.md).
 
 # Experiments:
-![results.jpg](https://github.com/TJU-WEIHAO/MLCN/blob/main/results.jpg)
+The results of old photo restoration are as follows.
+![results.jpg](https://github.com/TJU-EECS/MC-GAN/blob/main/assert/result.jpg)
 
+The results of image denoising and deblurring are as follows.
+![results.jpg](https://github.com/TJU-EECS/MC-GAN/blob/main/assert/result1.jpg)
 
 ``` latex
 @misc{wang2020basicsr,
