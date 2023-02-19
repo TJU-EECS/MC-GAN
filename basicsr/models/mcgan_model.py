@@ -121,8 +121,8 @@ def recompose_tensor(patches, full_height, full_width, overlap=10):
     return recomposed_tensor
 
 
-class INPLModel(SRModel):
-    """INPL model for single image super-resolution."""
+class mcModel(SRModel):
+    
 
     def init_training_settings(self):
         train_opt = self.opt['train']
