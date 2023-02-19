@@ -29,8 +29,13 @@ Of course, You can use personal data with a similar structure to the test datase
 If you want to evaluate the quantitative metrics, run:  
 > PYTHONPATH="./:${PYTHONPATH}" CUDA_VISIBLE_DEVICES=0,1 python basicsr/test.py -opt options/MyOptions/test/test_MCGAN.yml
 
-
 The test results will be updata in the ./experiments files.  
+
+The more details can be find in ./docs.
+
+- **Training and testing commands**: Please see **[TrainTest.md](docs/TrainTest.md)** for the basic usage.
+- **Options/Configs**: Please refer to [Config.md](docs/Config.md).
+- **Logging**: Please refer to [Logging.md](docs/Logging.md).
 
 # Experiments:
 ![results.jpg](https://github.com/TJU-WEIHAO/MLCN/blob/main/results.jpg)
