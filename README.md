@@ -27,7 +27,7 @@ We provide processed testing set. Please down the datasets.zip files from the [D
 Of course, You can use personal data with a similar structure to the test dataset. After that, please change the options of test_MCGAN.yml.
 
 If you want to evaluate the quantitative metrics, run:  
-> PYTHONPATH="./:${PYTHONPATH}" CUDA_VISIBLE_DEVICES=0 python basicsr/test.py -opt options/MyOptions/test/test_INPLGAN.yml
+> PYTHONPATH="./:${PYTHONPATH}" CUDA_VISIBLE_DEVICES=0,1 python basicsr/test.py -opt options/MyOptions/test/test_MCGAN.yml
 
 
 The test results will be updata in the ./experiments files.  
