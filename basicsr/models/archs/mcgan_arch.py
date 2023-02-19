@@ -147,27 +147,15 @@ class ResiduleBlock(nn.Module):
         return x + res
 
 
-class INPL(nn.Module):
-    """Networks consisting of Residual in Residual Dense Block, which is used
-    in ESRGAN.
-
-    ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks.
-    Currently, it supports x4 upsampling scale factor.
-
-    Args:
-        num_in_ch (int): Channel number of inputs.
-        num_out_ch (int): Channel number of outputs.
-        num_feat (int): Channel number of intermediate features.
-            Default: 64
-        num_block (int): Block number in the trunk network. Defaults: 32
-    """
+class MCGAN(nn.Module):
+    "
 
     def __init__(self,
                  num_in_ch,
                  num_out_ch,
                  num_feat=64,
                  num_block=32):
-        super(INPL, self).__init__()
+        super(MCGAN, self).__init__()
         self.head = MyConv2D(num_in_ch, num_feat, kernel=3, stride=1, dilation=1)
         self.de_noise = LatentCodeFusion(num_feat, 512)
         body = []
