@@ -8,8 +8,8 @@ datasets:
   test_1:  # the 1st test dataset
     name: OldPhotos-test
     type: PairedImageDataset
-    dataroot_gt: datasets/InPaintOld/OldDataSetV2/Fusion256/GT #datasets/FusionOldPhotos-x2/GT
-    dataroot_lq: datasets/InPaintOld/OldDataSetV2/Fusion256/Old #datasets/FusionOldPhotos-x2/Old
+    dataroot_gt: #the path of GT images which used by testing
+    dataroot_lq: #the path of GT images which used by testing
     io_backend:
       type: disk
 
@@ -23,7 +23,7 @@ network_g:
 
 # path
 path:
-  pretrain_network_g: experiments/INPLGAN_OldPhtots_400k/models/net_g_latest.pth 
+  pretrain_network_g: #the path of checkpoints which used by testing
   strict_load_g: true
 
 # validation settings
